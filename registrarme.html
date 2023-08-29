@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styes.css">
+
+    <title>Cesar Avendaño - Clase07_FE01_DH_150823</title>
+</head>
+<body>
+    <div class="descuento">
+        <p>20% de descuento en todos los productos!</p>
+    </div>
+    <div class="header">
+        <header>
+            <div class="githubImg">
+                <a href="index.html"><img src="./img/logo_1.svg" alt="Logo"></a>
+            </div>
+            <p>Nombre Tienda</p>
+
+        </header>
+        <nav class="nav-header">
+            <ul class="lista-nav">
+                <li class="elemento-nav"><a href="registrarme.html">Contacto</a></li>
+                <li class="elemento-nav"><a href="registrarme.html">Registrarme</a></li>
+                <li class="elemento-nav"><a href="registrarme.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="registro">
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones</p>
+        <form action="#" method="POST">
+            <div class="formulario">
+                <div class="fila1">
+                    <div class="columna1">
+                        <div class="c1">
+                            <label for="nombre">*Nombre</label><br/>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="c1">
+                            <label for="fecha">Fecha</label><br/>
+                            <input type="date" name="fecha" id="fecha" >
+                        </div>
+                        <div class="c1">
+                            <textarea name="descripcion">Descripción</textarea>
+                        </div>
+                    </div>
+                    <div class="columna2">
+                        <div class="c2">
+                            <label for="especie">*Especie</label><br>
+                            <select name="especie" id="especie" required>
+                                <option value="especie">Especie</option>
+                            </select>
+                        </div>
+                        <div class="c2">
+                            <label for="foto">Agregar Foto</label><br>
+                            <input type="file" name="foto" accept=".jpg" id="foto">
+                        </div>
+                        <div class="c2">
+                            <div class="checkbox_poderes">
+                                <label>Poderes</label>
+                                <label>
+                                    <input type="checkbox" name="poderes" value="volar"/>Volar
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="poderes" value="superinteligencia"/>Superinteligencia
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="poderes" value="vistarayolaser"/>Vista de rayo láser
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="poderes" value="billeteragorda"/>Billetera gorda
+                                </label>
+                            </div>
+                            <div>
+                                <hr/>
+                            </div>
+                            <div class="radio_personajes">
+                                <label>Tipo de personajes</label>
+                                <label>
+                                    <input type="radio" name="heroe" value="heroe/heroina">Héroe / Heroina
+                                </label>
+                                <label>
+                                    <input type="radio" name="heroe" value="villano/villana">Villano / Villana
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila2">
+                    <button type="submit">Añadir</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <footer>
+            <span>Todos los derechos reservados a FRONT END 1</span>
+        </footer>
+    </div>
+</body>
+</html>
